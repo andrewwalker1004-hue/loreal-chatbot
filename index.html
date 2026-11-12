@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'Oréal | Smart Routine &amp; Product Advisor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Helvetica+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1 class="logo">L'ORÉAL</h1>
+      <p class="tagline">Smart Routine &amp; Product Advisor</p>
+    </header>
+
+    <main class="chat-card">
+      <div id="chat-window" class="chat-window" aria-live="polite">
+        <div class="message bot">
+          <div class="bubble">Bonjour! I'm your L'Oréal product advisor. Ask me about any L'Oréal product, ingredient, or skincare/haircare routine and I'll help you find what's right for you. 💛</div>
+        </div>
+      </div>
+
+      <form id="chat-form" class="chat-input-row" autocomplete="off">
+        <input
+          id="chat-input"
+          type="text"
+          placeholder="Ask me about any L'Oréal product or routine…"
+          aria-label="Type your question"
+          required
+        />
+        <button id="send-btn" type="submit" aria-label="Send">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 11L21 3L13 21L11 13L3 11Z" fill="currentColor" />
+          </svg>
+        </button>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 L'Oréal Student Project. Not an official L'Oréal product.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
